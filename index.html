@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Paul Taiwo Adedokun">
+  <meta name="description"
+    content="A simple Todo App built with Love and Passion to learn. #ALCwithGoogle #150DaysOfALC4 #GrowwithGoogle #5DaysOfCodeChallenge">
+
+  <title>ALC TODO -APP</title>
+  <link rel="shortcut icon" href="favicon.8747d0eb.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="overall-container">
+    <header>
+      <h1>TODO APP</h1>
+      <p>A simple Todo App built with Love and Passion to learn</p>
+      <p>#ALCwithGoogle #150DaysOfALC4 #GrowwithGoogle #5DaysOfCodeChallenge</p>
+    </header>
+
+    <section class="todo-contain">
+      <div class="add-item">
+        <h5 class="mb-20">Add item</h5>
+          <form>
+          <label for="todo-input">
+            <input id="todo-input" class="" type="text" />
+          </label>
+          <p class="invalid">Please input something!!</p>
+          <button id="submit-todo" class="btn btn-blue">Submit</button>
+          <button id="update-todo" class="btn btn-blue no-display">Update</button>
+          </form>
+      </div>
+
+      <div class="todos">
+        <h5 class="mb-20">Item List</h5>
+        <ul id="todoList" class="todo-list">
+          <li id="no-todo" class="todo">
+            <p>No Todo Found</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
