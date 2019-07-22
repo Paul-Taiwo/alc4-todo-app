@@ -71,6 +71,7 @@ const editTodo = (e) => {
       if (el === elem.textContent && i === elemIndex) {
         todos.splice(i, 1, input.value);
         render();
+        input.value = '';
 
         document.querySelector('#update-todo').classList.add('no-display');
         submitButton.removeAttribute('disabled', 'disabled');
@@ -92,5 +93,6 @@ submitButton.addEventListener('click', (e) => {
 
     todos.push(input.value);
     displayTodos();
+    input.value = '';
   }
 });
